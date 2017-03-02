@@ -4,40 +4,51 @@
     <meta charset="UTF-8">
     <title>Title03</title>
     <style>
+        .clearfix:after{
+            content: "\200B";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .clearfix{
+            *zoom:1;
+        }
         .wrap{
             margin: 30px;
             border: 1px solid #75a552;
             background: #eeeeee;
-            position: relative;
-            min-height: 500px;
         }
         .left{
-            margin: 30px;
+            /*margin: 30px;*/
             border: 1px solid #a8ff2b;
             width: 200px;
-            position: absolute;
-            top:0;
-            left: 0;
+            float: left;
+            margin-left: -100%;
+            margin-top:30px;
         }
         .logo{
             margin: 20px;
             border: 1px solid #8fffb4;
             width: 80px;
             height: 80px;
-            display: inline-block;
         }
         .middle{
-            border: 1px solid #75a552;
-            margin: 0 270px 120px;
             margin-top: 30px;
+            float: left;
+            width: 100%;
+        }
+        .middle-innner{
+            margin: 0 142px 0 222px;
+            border: 1px solid #75a552;
+            min-width: 300px;
+            padding: 20px;
         }
         .right{
             width: 120px;
             border: 1px solid #a8ff2b;
-            margin: 30px;
-            position: absolute;
-            top:0;
-            right:0;
+            margin-left: -122px;
+            float: left;
+            margin-top: 30px;
         }
         .logos{
             margin: 20px;
@@ -46,17 +57,17 @@
     </style>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap clearfix">
+    <div class="middle">
+        <p class="middle-innner">百度前端技术学院的课程任务是由百度前端工程师专为对前端不同掌握程度的同学设计。我们尽力保证课程内容的质量以及学习难度的合理性，但即使如此，真正决定课程效果的，还是你的每一次思考和实践。
+
+            课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。那些最终没有被我们采纳的方案，同样也可以帮助我们学到很多知识。所以，我们列出的参考资料未必是实现需求所必须的。有的时候，实现题目的要求很简单，甚至参考资料里就有，但是背后的思考和亲手去实践却是任务最关键的一部分。在学习这些资料时，要多思考，多提问，多质疑。相信通过和小伙伴们的交流，能让你的学习事半功倍。</p>
+    </div>
     <div class="left">
         <div class="logo">
             <img style="width: 80px; height: 80px;" src="img/03.png"/>
         </div>
         <p style="display: inline-block;">名称</p>
-    </div>
-    <div class="middle">
-        <p>百度前端技术学院的课程任务是由百度前端工程师专为对前端不同掌握程度的同学设计。我们尽力保证课程内容的质量以及学习难度的合理性，但即使如此，真正决定课程效果的，还是你的每一次思考和实践。
-
-            课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。那些最终没有被我们采纳的方案，同样也可以帮助我们学到很多知识。所以，我们列出的参考资料未必是实现需求所必须的。有的时候，实现题目的要求很简单，甚至参考资料里就有，但是背后的思考和亲手去实践却是任务最关键的一部分。在学习这些资料时，要多思考，多提问，多质疑。相信通过和小伙伴们的交流，能让你的学习事半功倍。</p>
     </div>
     <div class="right">
         <div class="logos">

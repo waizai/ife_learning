@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>瀑布流</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .clearfix:after{
+            content: "\200B";
+            display: block;
+            height: 0;
+            clear:both;
+        }
+        .clearfix{
+            *zoom:1;
+        }
+        .container{
+            border: 1px solid #8fffb4;
+            background: #eeeeee;
+            margin: 30px;
+            position: relative;
+        }
+        .box{
+            float: left;
+            padding: 5px;
+
+        }
+        .box-img{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+<div class="container clearfix">
+    <div class="box">
+        <div class="box-img">
+            <img src="xiaowei/img/01.png" alt="pic1">
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-img">
+            <img src="xiaowei/img/02.png" alt="pic2">
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-img">
+            <img src="xiaowei/img/01.png" alt="pic3">
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-img">
+            <img src="xiaowei/img/02.png" alt="pic4">
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-img">
+            <img src="xiaowei/img/01.png" alt="pic5">
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-img">
+            <img src="xiaowei/img/02.png" alt="pic6">
+        </div>
+    </div>
+</div>
+</body>
+<script src="common/jquery/jquery-3.1.1.js"></script>
+<script>
+    //
+    $(function () {
+        var
+    });
+</script>
+</html>
