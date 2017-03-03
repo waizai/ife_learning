@@ -17,5 +17,10 @@
     坑:中间的min-width和左中右合起来的min-width
 ###4)flex布局
     http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+``
 
-
+##2.task4
+###1)https://css-tricks.com/centering-css-complete-guide/
+    水平:inline---text-align:center
+         block---width:xx px;
+                 margin:0 auto;
