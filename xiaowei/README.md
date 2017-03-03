@@ -16,5 +16,6 @@
     原理:所有元素都浮动,改变浮动位置
     坑:中间的min-width和左中右合起来的min-width
 ###4)flex布局
+    http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
 
