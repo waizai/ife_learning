@@ -36,7 +36,7 @@
                            里块display:table-cell;vertical-align:middle;
         b)multiple lines---table>tr>td
         c)multiple lines---display: flex;flex-direction: column;justify-content: center;
-        d)multiple lines---ghost element[ghost element.html]
+        d)multiple lines---ghost element[ghost element.html]??????
 
 
         a)block---[04_position.html]
