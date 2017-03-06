@@ -22,6 +22,7 @@
 ##2.task4
 ###1)https://css-tricks.com/centering-css-complete-guide/
     水平:inline---text-align:center
+
          block---width:xx px;
                  margin:0 auto;
          a)more than one block---外包裹块text-align:center;
@@ -29,7 +30,14 @@
          b)more than one block---外包裹块display:flex;justify-content:center;max-width:xx px;
     垂直:a)inline---padding-top:30px;padding-bottom:30px;
         b)inline---height:100px;line-height:100px;
+
+
         a)multiple lines---外包裹块display:table;
                            里块display:table-cell;vertical-align:middle;
         b)multiple lines---table>tr>td
         c)multiple lines---display: flex;flex-direction: column;justify-content: center;
+        d)multiple lines---ghost element[ghost element.html]
+
+
+        a)block---[04_position.html]
+        b)block---[04_transform.html]

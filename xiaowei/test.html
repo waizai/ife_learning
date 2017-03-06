@@ -9,32 +9,36 @@
             font-size: 80%;
         }
 
-        div {
+        main {
             background: white;
-            width: 240px;
+            height: 300px;
             margin: 20px;
-        }
-
-        .flex-center {
-            background: black;
-            color: white;
-            border: 10px solid white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 200px;
+            width: 300px;
+            position: relative;
             resize: vertical;
             overflow: auto;
         }
-        .flex-center p {
-            margin: 0;
+
+        main div {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            right: 20px;
+            height: 100px;
+            margin-top: -70px;
+            background: black;
+            color: white;
             padding: 20px;
         }
     </style>
 </head>
 <body>
-<div class="flex-center">
-    <p>I'm vertically centered multiple lines of text in a flexbox container.</p>
-</div>
+<main>
+
+    <div>
+        I'm a block-level element with a fixed height, centered vertically within my parent.
+    </div>
+
+</main>
 </body>
 </html>
